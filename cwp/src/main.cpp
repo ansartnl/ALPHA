@@ -161,7 +161,7 @@ int main(int argc, char* argv[])
     globalSettings(QApplication::applicationDirPath() + "/" +
                    QApplication::applicationName() + ".settings");
 
-    QString pathConfig = InitMain::findConfigFilePath();
+
     if (pathConfig.isEmpty())
     {
         QMessageBox::critical(0, QObject::tr("Error configuration"),
@@ -174,7 +174,7 @@ int main(int argc, char* argv[])
 
     QtXmlSettings *alternative = 0;
     QStringList args = QApplication::arguments();
-    if(args.contains("-a") && args.indexOf("-a") + 1 < args.size())
+    if(args.contains("-a -f") && args.indexOf("-a") + 1 < args.size())
     {
         QString additionalConfigPath = args.at(args.indexOf("-a") + 1);
         alternative = new QtXmlSettings(additionalConfigPath, qApp);
@@ -201,7 +201,7 @@ int main(int argc, char* argv[])
 
     qDebug() << " =========> NEW_SESSION_STARTED <========= ";
     qDebug() << QString(" %1, Version %2 ").arg(qApp->applicationName(), qApp->applicationVersion());
-    qDebug() << QString(" Build date: %1 ").arg(__DATE__);
+    qDebug() << QString(" Build date: %1 %2").arg(__DATE__);
     qWarning() << QString(" Configuration file: '%1' ").arg(pathConfig) << "\n";
 
     bool registered = false;
@@ -230,7 +230,7 @@ int main(int argc, char* argv[])
             if (currentHardwareId.isValid())
             {
                 hardwareIdFile.open(QIODevice::WriteOnly);
-                hardwareIdFile.write(currentHardwareId.toByteArray());
+                
             }
         }
     }
