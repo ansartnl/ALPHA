@@ -44,7 +44,7 @@
         <database1>
             <driver>QPSQL</driver>
             <host>127.0.0.1</host>
-            <name>aero_orsha</name>
+            <name>aero</name>
             <password>aero</password>
             <port>5432</port>
             <user>aero</user>
@@ -52,7 +52,7 @@
         <database2>
             <driver>QPSQL</driver>
             <host>192.168.56.101</host>
-            <name>aero_orsha</name>
+            <name>aero</name>
             <password>aero</password>
             <port>5432</port>
             <user>aero</user>
