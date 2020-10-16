@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChgWidget</class>
+ <widget class="QWidget" name="ChgWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>954</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Departure aerodrome:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>3.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>7.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_26">
+       <property name="text">
+        <string>16.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="4">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="telegramType">
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>CHG</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="acid">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maxLength">
+        <number>7</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>ACID:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="adep">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Destination aerodrome:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_24">
+       <property name="text">
+        <string>13.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Telegram  type:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="ades">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>22. Changes</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="4">
+       <widget class="QLineEdit" name="aircraftType">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>Flight level:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>Destination aerodrome:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1" colspan="8">
+       <widget class="QTextEdit" name="route">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QComboBox" name="flightRules"/>
+      </item>
+      <item row="0" column="4">
+       <widget class="QComboBox" name="flightType"/>
+      </item>
+      <item row="6" column="5">
+       <widget class="QComboBox" name="flightLevelType"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>Departure aerodrome:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Route:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1" colspan="8">
+       <widget class="QTextEdit" name="other">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>WTC:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Flight rules:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="4">
+       <widget class="QLineEdit" name="eet">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="inputMask">
+         <string>99:99;_</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QSpinBox" name="speed">
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="field10CheckBox">
+        <property name="text">
+         <string>10.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QComboBox" name="wtc"/>
+      </item>
+      <item row="10" column="3">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>EET:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="6">
+       <widget class="QSpinBox" name="flightLevel">
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="5">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>Alt. aerodrome 1:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="numberOfAircrafts">
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Flight type:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Type:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="field9CheckBox">
+        <property name="text">
+         <string>9.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QCheckBox" name="field16CheckBox">
+        <property name="text">
+         <string>16.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>Departure time:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QTimeEdit" name="departureTime">
+        <property name="displayFormat">
+         <string>HH:mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="7">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>Alt. aerodrome 2:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="field8CheckBox">
+        <property name="text">
+         <string>8.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Speed:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Equipment:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QComboBox" name="speedType"/>
+      </item>
+      <item row="12" column="1">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Other:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="field13CheckBox">
+        <property name="text">
+         <string>13.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QCheckBox" name="field15CheckBox">
+        <property name="text">
+         <string>15.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QCheckBox" name="field18CheckBox">
+        <property name="text">
+         <string>18.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Numder of aircrafts:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="8">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="selectRoute">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="equipment">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="changedAdep">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QLineEdit" name="changedAdes">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="6">
+       <widget class="QLineEdit" name="alt1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="8">
+       <widget class="QLineEdit" name="alt2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>acid</tabstop>
+  <tabstop>field8CheckBox</tabstop>
+  <tabstop>flightRules</tabstop>
+  <tabstop>flightType</tabstop>
+  <tabstop>field9CheckBox</tabstop>
+  <tabstop>numberOfAircrafts</tabstop>
+  <tabstop>wtc</tabstop>
+  <tabstop>field10CheckBox</tabstop>
+  <tabstop>field13CheckBox</tabstop>
+  <tabstop>departureTime</tabstop>
+  <tabstop>field15CheckBox</tabstop>
+  <tabstop>speedType</tabstop>
+  <tabstop>speed</tabstop>
+  <tabstop>flightLevelType</tabstop>
+  <tabstop>flightLevel</tabstop>
+  <tabstop>selectRoute</tabstop>
+  <tabstop>route</tabstop>
+  <tabstop>field16CheckBox</tabstop>
+  <tabstop>eet</tabstop>
+  <tabstop>field18CheckBox</tabstop>
+  <tabstop>other</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

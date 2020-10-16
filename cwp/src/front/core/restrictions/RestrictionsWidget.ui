@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RestrictionsWidget</class>
+ <widget class="QWidget" name="RestrictionsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>546</width>
+    <height>177</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>FIR:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBoxFIR"/>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>319</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="3">
+    <widget class="QToolButton" name="toolButtonAdd">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Add new Zone</string>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../../share/resource.qrc">
+       <normaloff>:/EditIcons/PlusIcon</normaloff>:/EditIcons/PlusIcon</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QToolButton" name="toolButtonDelete">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Remove selected Zone</string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../../share/resource.qrc">
+       <normaloff>:/EditIcons/MinusIcon</normaloff>:/EditIcons/MinusIcon</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QToolButton" name="toolButtonEditPoints">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Edit selected Zone</string>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../../share/resource.qrc">
+       <normaloff>:/EditIcons/EditIcon</normaloff>:/EditIcons/EditIcon</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QToolButton" name="toolButtonRequest">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Request zones</string>
+     </property>
+     <property name="text">
+      <string>Request</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../../share/resource.qrc">
+       <normaloff>:/EditIcons/RequestIcon</normaloff>:/EditIcons/RequestIcon</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QToolButton" name="toolButtonHighlight">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Highlight selected Zone</string>
+     </property>
+     <property name="text">
+      <string>Highlight</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../../share/resource.qrc">
+       <normaloff>:/EditIcons/HighlightIcon</normaloff>:/EditIcons/HighlightIcon</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="8">
+    <widget class="QTableView" name="tableView">
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>25</number>
+     </attribute>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>comboBoxFIR</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>toolButtonAdd</tabstop>
+  <tabstop>toolButtonDelete</tabstop>
+  <tabstop>toolButtonEditPoints</tabstop>
+  <tabstop>toolButtonRequest</tabstop>
+  <tabstop>toolButtonHighlight</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../../../share/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RplBrowser</class>
+ <widget class="QWidget" name="RplBrowser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RPL list</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="createButton">
+     <property name="toolTip">
+      <string>Create new RPL</string>
+     </property>
+     <property name="statusTip">
+      <string>Create new RPL</string>
+     </property>
+     <property name="text">
+      <string>New RPL</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="cloneButton">
+     <property name="toolTip">
+      <string>Create copy of selected RPL</string>
+     </property>
+     <property name="statusTip">
+      <string>Create copy of selected RPL</string>
+     </property>
+     <property name="text">
+      <string>Clone RPL</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="editButton">
+     <property name="toolTip">
+      <string>Edit selected RPL</string>
+     </property>
+     <property name="statusTip">
+      <string>Edit selected RPL</string>
+     </property>
+     <property name="text">
+      <string>Edit RPL</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="deleteButton">
+     <property name="toolTip">
+      <string>Delete selected RPL</string>
+     </property>
+     <property name="statusTip">
+      <string>Delete selected RPL</string>
+     </property>
+     <property name="text">
+      <string>Delete RPL</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLineEdit" name="filterEdit"/>
+   </item>
+   <item row="0" column="5">
+    <widget class="QPushButton" name="filterButton">
+     <property name="toolTip">
+      <string>Filter RPLs by specified text</string>
+     </property>
+     <property name="statusTip">
+      <string>Filter RPLs by specified text</string>
+     </property>
+     <property name="text">
+      <string>Filter RPLs</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="6">
+    <widget class="QtSqlTableView" name="table">
+     <property name="autoScroll">
+      <bool>false</bool>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtSqlTableView</class>
+   <extends>QTableView</extends>
+   <header>qtsqltableview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <aftn_file_worker>
+    <aftn_message_processor>
+      <!--Настройки модуля парсинга AFTN сообщений. -->
+      <cut_fir>
+        true<!--Вырезать FIR из маршрута. -->
+      </cut_fir>
+      <fir_name>
+        UMMV<!--FIR -->
+      </fir_name>
+      <validate_route>
+        true<!--Проверять корректность маршрута. -->
+      </validate_route>
+    </aftn_message_processor>
+    <!--Настройки модуля парсинга AFTN сообщений из файлов. -->
+    <file_ext>
+      lod<!--Расширение файлов с сообщениями. -->
+    </file_ext>
+    <incoming_dir>
+      messages<!--Директория входящих сообщений. -->
+    </incoming_dir>
+    <processed_dir>
+      messages_done<!--Директория обработанных сообщений. -->
+    </processed_dir>
+    <timer_interval>
+      5<!--Таймер в СЕКУНДАХ для чтения директории. -->
+    </timer_interval>
+  </aftn_file_worker>
+  <db>
+    <!--Параметры подключения к СУБД -->
+    <connect_timeout>
+      5<!--Таймаут подключения в минутах. -->
+    </connect_timeout>
+    <driver>
+      QOCI<!--Qt драйвер подключения к базе данных. Сейчас может быть ТОЛЬКО 
+        QOCI -->
+    </driver>
+    <host>
+      192.20.1.62<!--Адрес сервера СУБД -->
+    </host>
+    <name>XE<!--Имя базы данных. У Oracle здесь 
+        url-строка подключения -->
+    </name>
+    <password>
+      aero<!--Пароль пользователя -->
+    </password>
+    <port>
+      1521<!--Порт на котором запущена СУБД -->
+    </port>
+    <user>
+      aero<!--Пользователь -->
+    </user>
+  </db>
+  <ffpl_worker>
+    <processing_time>
+      12<!--На сколько ЧАСОВ вперед переносить Future FPL в FPL. -->
+    </processing_time>
+    <timer_interval>
+      5<!--Таймер в СЕКУНДАХ срабатывания потока . -->
+    </timer_interval>
+  </ffpl_worker>
+  <rpl_worker>
+    <!--Настройки модуля для обработки RPL. -->
+    <processing_time>
+      12<!--На какое количество часов вперед генерировать FPL -->
+    </processing_time>
+    <timer_interval>
+      5<!--Таймер срабатывания в СЕКУНДАХ -->
+    </timer_interval>
+  </rpl_worker>
+  <table_cleaner>
+    <arc_aftn_processing_month>
+      2<!--Через какое количество месяцев очищать архив AFTN сообщений. -->
+    </arc_aftn_processing_month>
+    <!--Table cleaner parameters. -->
+    <fpl_processing_hours>
+      12<!--Через какое количество ЧАСОВ удалять FPL. -->
+    </fpl_processing_hours>
+    <hist_fpl_processing_month>
+      2<!--Через какое количество месяцев очищать историю FPL сообщений. -->
+    </hist_fpl_processing_month>
+    <hist_man_aftn_processing_month>
+      2<!--Через какое количество месяцев очищать архив отредактированных 
+        AFTN сообщений. -->
+    </hist_man_aftn_processing_month>
+    <hist_rpl_processing_month>
+      2<!--Через какое количество месяцев очищать архив RPL. -->
+    </hist_rpl_processing_month>
+    <notam_processing_month>
+      2<!--Через какое количество месяцев очищать архив NOTAM сообщений. -->
+    </notam_processing_month>
+    <rpl_processing_month>
+      2<!--Через какое количество месяцев очищать RPL. -->
+    </rpl_processing_month>
+    <timer_interval>
+      5<!--С какой периодичностью запускать данный поток в СЕКУНДАХ. -->
+    </timer_interval>
+    <users_processing_month>
+      2<!--Через какое количество месяцев очищать таблицу пользователей. -->
+    </users_processing_month>
+  </table_cleaner>
+  <tcp_ip_connector>
+    <aftn_message_processor>
+      <!--Настройки модуля парсинга AFTN сообщений. -->
+      <cut_fir>
+        true<!--Вырезать FIR из маршрута. -->
+      </cut_fir>
+      <fir_name>
+        UMMV<!--FIR -->
+      </fir_name>
+      <validate_route>
+        true<!--Проверять корректность маршрута. -->
+      </validate_route>
+    </aftn_message_processor>
+    <aftn_name>
+      somename<!--Имя абонента. -->
+    </aftn_name>
+    <!--Настройки модуля tcp/ip подключения к AFTN серверу. -->
+    <host1>
+      127.0.0.1<!--Адрес сервера AFTN сообщений. -->
+    </host1>
+    <host2>
+      192.168.1.1<!--Адрес запасного сервера AFTN сообщений. -->
+    </host2>
+    <ping_timeout>
+      10<!--Таймер ping'а. -->
+    </ping_timeout>
+    <port1>
+      10200<!--Порт сервера AFTN сообщений. -->
+    </port1>
+    <port2>
+      10200<!--Порт запасного сервера AFTN сообщений. -->
+    </port2>
+    <text_codec>
+      ita2<!--Кодировка сообщений. -->
+    </text_codec>
+    <timer_interval>
+      5<!--Таймер проверки подключения. -->
+    </timer_interval>
+  </tcp_ip_connector>
+  <oldi>
+    <owner_name>FDP</owner_name>
+    <lam_timeout>10</lam_timeout>
+  </oldi>
+</root>

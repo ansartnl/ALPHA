@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserAdmin</class>
+ <widget class="QDialog" name="UserAdmin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>User administration</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Users</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Users</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QTableView" name="UserView">
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <attribute name="horizontalHeaderVisible">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>true</bool>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="AddUser">
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="RemoveUser">
+               <property name="text">
+                <string>Remove</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="Settings">
+          <property name="title">
+           <string>Settings</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QPushButton" name="ChangePass">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>Change password...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Groups</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QSplitter" name="splitter_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Groups</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QTableView" name="GroupView">
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <attribute name="horizontalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>true</bool>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="AddGroup">
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="RemoveGroup">
+               <property name="text">
+                <string>Remove</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Privileges</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QTreeView" name="PrivilegeView">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="AllowCheck">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>allowed</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="ButtonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>AddUser</tabstop>
+  <tabstop>RemoveUser</tabstop>
+  <tabstop>ChangePass</tabstop>
+  <tabstop>GroupView</tabstop>
+  <tabstop>AddGroup</tabstop>
+  <tabstop>RemoveGroup</tabstop>
+  <tabstop>PrivilegeView</tabstop>
+  <tabstop>AllowCheck</tabstop>
+  <tabstop>ButtonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>AddUser</sender>
+   <signal>clicked()</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>OnAddUser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RemoveUser</sender>
+   <signal>clicked()</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>OnRemoveUser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ChangePass</sender>
+   <signal>clicked()</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>OnChangePass()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>441</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>265</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AllowCheck</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>OnAllow(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddGroup</sender>
+   <signal>clicked()</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>OnAddGroup()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>367</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RemoveGroup</sender>
+   <signal>clicked()</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>OnRemoveGroup()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>365</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonBox</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>OnOperButton(QAbstractButton*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>115</x>
+     <y>372</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>UserAdmin</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnAddUser()</slot>
+  <slot>OnRemoveUser()</slot>
+  <slot>OnChangePass()</slot>
+  <slot>OnChangeRole(int)</slot>
+  <slot>OnAllow(int)</slot>
+  <slot>OnAddGroup()</slot>
+  <slot>OnRemoveGroup()</slot>
+  <slot>OnOperButton(QAbstractButton*)</slot>
+ </slots>
+</ui>

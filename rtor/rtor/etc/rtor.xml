@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <KeepLog>true</KeepLog>
+    <Language>english</Language>
+    <Log>
+        <FileSize>1048576</FileSize>
+        <Level>ALL</Level>
+        <MaxBackupIndex>10</MaxBackupIndex>
+        <Path></Path>
+    </Log>
+    <NetworkCheckTime>10</NetworkCheckTime>
+    <SinhSfpl>true</SinhSfpl>
+    <databases timeout="6">
+        <database1>
+            <driver>QPSQL</driver>
+            <host>192.20.1.45</host>
+            <name>aero</name>
+            <password>aero</password>
+            <port>5432</port>
+            <user>aero</user>
+        </database1>
+        <database2>
+            <driver>QOCI</driver>
+            <host>127.0.0.1</host>
+            <name>XE</name>
+            <password>aero</password>
+            <port>1521</port>
+            <user>aero</user>
+        </database2>
+    </databases>
+    <fir>UMMV,UTTZ,UTTR,UTT2,UTSD,UTNR</fir>
+    <redis_first timeout="6">
+        <redis1>
+            <ip>127.0.0.1</ip>
+            <port>6379</port>
+        </redis1>
+    </redis_first>
+    <redis_second timeout="6">
+        <redis1>
+            <ip>192.168.2.40</ip>
+            <port>6379</port>
+        </redis1>
+    </redis_second>
+</root>

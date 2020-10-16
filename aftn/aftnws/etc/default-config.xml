@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <aftn_message_processor>
+    <!--AFTN message processor for manual editor. -->
+    <cut_fir>
+      true<!--Cut FIR for fpl. -->
+    </cut_fir>
+    <fir_name>
+      UMMV<!--FIR name. -->
+    </fir_name>
+    <FPL2012>
+      true<!--Формат сообщений FPL2012 или FPL2007.-->
+    </FPL2012>
+    <validate_route>
+      true<!--Validate route. -->
+    </validate_route>
+    <validate_route_lite>false<!--Проверять корректность маршрута (слабая проверка). -->
+    </validate_route_lite>
+  </aftn_message_processor>
+  <db>
+    <!--Database connection parameters. -->
+    <driver>
+      QOCI<!--Qt драйвер подключения к базе данных. Сейчас может быть ТОЛЬКО QOCI -->
+    </driver>
+    <name>
+      XE<!--Database name. -->
+    </name>
+    <password>
+      aero<!--User password for database connection. -->
+    </password>
+    <port>
+      1521<!--Database port. -->
+    </port>
+    <user>
+      aero<!--User for database connection. -->
+    </user>
+    <connect_timeout>
+      5<!--Connection timeout in minutes. -->
+    </connect_timeout>
+  </db>
+  <log>
+    <file_size>
+      1048576<!-- Maximum file size (bytes) used by the appender -->
+    </file_size>
+    <level>
+      ALL<!-- OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, ALL -->
+    </level>
+    <max_backup_index>
+      10<!-- Maximum backup count used by the appender -->
+    </max_backup_index>
+    <path>
+      aftnws.log<!-- Log file path -->
+    </path>
+  </log>
+</root>

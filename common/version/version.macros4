@@ -1,0 +1,21 @@
+#ifndef _VERSION_H__
+#define _VERSION_H__
+
+
+// Major version number
+#define VERSION_MAJOR           __VERSION_MAJOR__
+
+// Minor version number
+#define VERSION_MINOR           __VERSION_MINOR__
+
+// Build number
+#define VERSION_BUILD           __VERSION_BUILD__
+
+// Revision number
+#define VERSION_REVISION        __VERSION_REVISION__
+
+// Full version number: major.minor.build.revision
+#define VERSION_FULL            "__VERSION_MAJOR__.__VERSION_MINOR__.__VERSION_BUILD__.__VERSION_REVISION__"
+
+
+#endif // _VERSION_H__

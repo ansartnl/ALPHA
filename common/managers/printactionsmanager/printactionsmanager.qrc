@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/document/document-page-setup.png</file>
+        <file>images/document/document-print.png</file>
+        <file>images/document/document-print-preview.png</file>
+    </qresource>
+</RCC>

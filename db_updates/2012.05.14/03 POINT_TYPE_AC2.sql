@@ -1,0 +1,26 @@
+CREATE OR REPLACE
+TRIGGER POINT_TYPE_AC2
+  AFTER INSERT OR UPDATE OR DELETE ON POINT_TYPE FOR EACH ROW
+DECLARE
+  ac_flag NUMBER;
+  rec_exist NUMBER;
+
+BEGIN
+  ac_flag := sys_context('CLIENTCONTEXT', 'ARINC_CHANGES_FLAG');
+  IF ac_flag = 777 THEN
+    --DELETE
+    IF DELETING THEN
+      DELETE FROM POINT_TYPE_M WHERE id = :old.id;
+    --INSERT or UPDATE
+    ELSE
+      SELECT COUNT(*) INTO rec_exist FROM POINT_TYPE_M WHERE id = :new.id;
+      IF rec_exist > 0 THEN
+        UPDATE POINT_TYPE_M SET name = :new.name WHERE id = :new.id;
+      ELSE
+        INSERT INTO POINT_TYPE_M VALUES (:new.id, :new.name);
+      END IF;
+    END IF;
+  END IF;
+END;
+/
+ALTER TRIGGER POINT_TYPE_AC2 ENABLE;

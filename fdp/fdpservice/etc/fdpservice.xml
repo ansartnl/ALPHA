@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <aftn_file_worker>
+        <aftn_catalog>
+            <aftnName>XXXXXXXX<!--Имя абонента.-->
+            </aftnName>
+            <channelId>000<!--Идентификатор канала (3 символа).-->
+            </channelId>
+            <codec>cp866<!--Кодировка сообщений.-->
+            </codec>
+            <!--Настройки AFTN каталога.-->
+            <disable>true<!--Отключить.-->
+            </disable>
+            <file_pattern>*<!--Маска файлов с сообщениями.-->
+            </file_pattern>
+            <incoming>./incoming<!--Директория для входящих.-->
+            </incoming>
+            <outgoing>./outgoing<!--Директория для исходящих.-->
+            </outgoing>
+        </aftn_catalog>
+        <aftn_message_processor>
+            <FPL2012>true<!--Формат сообщений FPL2012 или FPL2007.-->
+            </FPL2012>
+            <!--Настройки модуля парсинга AFTN сообщений.-->
+            <cut_fir>false<!--Вырезать FIR из маршрута.-->
+            </cut_fir>
+            <fir_name><!--FIR -->
+            </fir_name>
+            <validate_route>false<!--Проверять корректность маршрута. -->
+            </validate_route>
+            <validate_route_lite>false<!--Проверять корректность маршрута (слабая проверка). -->
+            </validate_route_lite>
+        </aftn_message_processor>
+        <codec>Windows-1251<!-- Windows-1251, IBM866, KOI8-R-->
+        </codec>
+        <!--Настройки модуля парсинга AFTN сообщений из файлов. -->
+        <file_ext>lod<!--Расширение файлов с сообщениями. -->
+        </file_ext>
+        <file_pattern>*R.*<!--Шаблон имени файла. -->
+        </file_pattern>
+        <filter>(\(\(PPL|\(RPL)<!-- -->
+        </filter>
+        <incoming_dir>messages<!--Директория входящих сообщений. -->
+        </incoming_dir>
+        <processed_dir>messages_done<!--Директория обработанных сообщений. -->
+        </processed_dir>
+        <telegram_delay>0<!--Задержка отправки телеграмм (в секундах).-->
+        </telegram_delay>
+        <timer_interval>5<!--Таймер в СЕКУНДАХ для чтения директории.-->
+        </timer_interval>
+    </aftn_file_worker>
+    <db>
+        <!--Параметры подключения к СУБД -->
+        <connect_timeout>5<!--Таймаут подключения в минутах. -->
+        </connect_timeout>
+        <driver>QOCI<!--Qt драйвер подключения к базе данных. Сейчас может быть ТОЛЬКО 
+        QOCI -->
+        </driver>
+        <host>192.20.1.45<!--Адрес сервера СУБД -->
+        </host>
+        <name>XE<!--Имя базы данных. У Oracle здесь 
+        url-строка подключения -->
+        </name>
+        <password>aero<!--Пароль пользователя -->
+        </password>
+        <port>1521<!--Порт на котором запущена СУБД -->
+        </port>
+        <user>aero<!--Пользователь -->
+        </user>
+    </db>
+    <ffpl_worker>
+        <processing_time>24<!--На сколько ЧАСОВ вперед переносить Future FPL в FPL. -->
+        </processing_time>
+        <timer_interval>5<!--Таймер в СЕКУНДАХ срабатывания потока . -->
+        </timer_interval>
+    </ffpl_worker>
+    <log>
+        <file_size>
+            1048576<!-- Maximum file size (bytes) used by the appender -->
+        </file_size>
+        <level>
+            ALL<!-- OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, ALL -->
+        </level>
+        <max_backup_index>
+            10<!-- Maximum backup count used by the appender -->
+        </max_backup_index>
+        <path>
+            fdpservice.log<!-- Log file path -->
+        </path>
+    </log>
+    <moxastatuschanger>
+        <!--Настройки смены состояния вывода DIO.-->
+        <disable>true</disable>
+        <extended_log>false</extended_log>
+        <host>127.0.0.1</host>
+        <port>5001</port>
+        <timer_interval>30<!--Таймер отправки пакетов в сотнях милисекунд.-->
+        </timer_interval>
+    </moxastatuschanger>
+    <mysqlconverter>
+        <!--Настройки ковертации из mysql в oracle.-->
+        <disable>true</disable>
+        <mysql>
+            <dbname>flplnnew</dbname>
+            <host>192.20.1.139</host>
+            <port>3306</port>
+            <user>root</user>
+        </mysql>
+        <timer_interval>5<!--Таймер проверки таблиц.-->
+        </timer_interval>
+    </mysqlconverter>
+    <oldi>
+        <append_entry_fir_eet>true<!--Учитывать ENTRY_FIR_EET.-->
+        </append_entry_fir_eet>
+        <clear_data>
+            <auto_clear_data>no<!--Запуск процесса автоматического удаления данных.-->
+            </auto_clear_data>
+            <!--Настройки автоматического удаления SFPL и FPL.-->
+            <delete_fpl_after>48<!--Удалять активный FPL через N ЧАСОВ.-->
+            </delete_fpl_after>
+            <delete_sfpl_after>6<!--Удалять активный SFPL через N ЧАСОВ.-->
+            </delete_sfpl_after>
+        </clear_data>
+        <!--Настройки для обмена OLDI сообщениями.-->
+        <cwp_name>CWPA,CWPB,CWPC,CWPD<!--Логические имена рабочих станций CWP.-->
+        </cwp_name>
+        <lam_timeout>10<!--Таймаут сообщения LAM в СЕКУНДАХ.-->
+        </lam_timeout>
+        <owner_name>FDP<!--Логическое имя сервера FDP.-->
+        </owner_name>
+    </oldi>
+    <pulsar>
+        <netmask>255.255.255.0<!--Маска сети для pulsar-->
+        </netmask>
+        <broadcast>192.168.1.255<!--Список широковещательных адресов для pulsar-->
+        </broadcast>
+        <server_address>0.0.0.0<!--Адрес сервера для pulsar-->
+        </server_address>
+    </pulsar>
+    <restarter>
+        <disable>true<!--Отключить. -->
+        </disable>
+        <interval>60<!--Таймер проверки состояния потоков. -->
+        </interval>
+        <script_path>restartProcess.bat</script_path>
+    </restarter>
+    <rpl_worker>
+        <!--Настройки модуля для обработки RPL. -->
+        <processing_time>12<!--На какое количество часов вперед генерировать FPL -->
+        </processing_time>
+        <timer_interval>5<!--Таймер срабатывания в СЕКУНДАХ -->
+        </timer_interval>
+    </rpl_worker>
+    <table_cleaner>
+        <arc_aftn_processing_day>2<!--Через какое количество дней очищать архив AFTN сообщений.-->
+        </arc_aftn_processing_day>
+        <archive_processing_day>2<!--Через какое количество дней очищать таблицу архивирования.-->
+        </archive_processing_day>
+        <archiveinput_processing_day>2<!--Через какое количество дней очищать таблицу входного архивирования.-->
+        </archiveinput_processing_day>
+        <!--Table cleaner parameters.-->
+        <disable>true<!--Отключить.-->
+        </disable>
+        <fpl_processing_hours>12<!--Через какое количество ЧАСОВ удалять FPL.-->
+        </fpl_processing_hours>
+        <hist_fpl_processing_day>2<!--Через какое количество дней очищать историю FPL сообщений.-->
+        </hist_fpl_processing_day>
+        <hist_man_aftn_processing_day>2<!--Через какое количество дней очищать архив отредактированных AFTN сообщений.-->
+        </hist_man_aftn_processing_day>
+        <hist_rpl_processing_day>2<!--Через какое количество дней очищать архив RPL.-->
+        </hist_rpl_processing_day>
+        <man_aftn_processing_day>1<!--Через какое количество дней очищать таблицу manual AFTN.-->
+        </man_aftn_processing_day>
+        <notam_processing_day>2<!--Через какое количество дней очищать архив NOTAM сообщений.-->
+        </notam_processing_day>
+        <rpl_processing_day>2<!--Через какое количество дней очищать RPL.-->
+        </rpl_processing_day>
+        <timer_interval>5<!--С какой периодичностью запускать данный поток в СЕКУНДАХ.-->
+        </timer_interval>
+        <users_processing_day>2<!--Через какое количество дней очищать таблицу пользователей.-->
+        </users_processing_day>
+    </table_cleaner>
+    <tcp_ip_connector>
+        <aftn_channel_id>ABC<!--Идентификатор канала (3 символа).-->
+        </aftn_channel_id>
+        <aftn_message_processor>
+            <FPL2012>true<!--Формат сообщений FPL2012 или FPL2007-->
+            </FPL2012>
+            <!--Настройки модуля парсинга AFTN сообщений.-->
+            <cut_fir>true<!--Вырезать FIR из маршрута.-->
+            </cut_fir>
+            <fir_name>UTTD,UTT2,UTSD,OAKX,UTNR,UTAV<!--FIR -->
+            </fir_name>
+            <validate_route>true<!--Проверять корректность маршрута. -->
+            </validate_route>
+            <validate_route_lite>false<!--Проверять корректность маршрута (слабая проверка). -->
+            </validate_route_lite>
+        </aftn_message_processor>
+        <aftn_name>УТТТЗРЗЬ<!--Имя абонента. -->
+        </aftn_name>
+        <aftn_name_server>UTDDYFYX<!--Имя сервера ЦКС.-->
+        </aftn_name_server>
+        <answer_on_error>false<!--Автоответ отправителю на ошибочное сообщение.-->
+        </answer_on_error>
+        <client_type>CTA<!--Тип клиента (CKS,CTA).-->
+        </client_type>
+        <!--Настройки модуля tcp/ip подключения к AFTN серверу. -->
+        <disable>true<!--Отключить. -->
+        </disable>
+        <host1>127.0.0.1<!--Адрес сервера AFTN сообщений. -->
+        </host1>
+        <host2>192.168.1.1<!--Адрес запасного сервера AFTN сообщений. -->
+        </host2>
+        <ping_timeout>10<!--Таймер ping'а. -->
+        </ping_timeout>
+        <port1>4566<!--Порт сервера AFTN сообщений. -->
+        </port1>
+        <port2>1001<!--Порт запасного сервера AFTN сообщений. -->
+        </port2>
+        <send_CH>true<!--Отправлять служебные сообщения CH.-->
+        </send_CH>
+        <skip_service_messages>false<!--Не отправлять служебные сообщения на ручную обработку.-->
+        </skip_service_messages>
+        <telegram_delay>0<!--Задержка отправки телеграмм (в секундах).-->
+        </telegram_delay>
+        <text_codec>ITA2<!--Кодировка сообщений.-->
+        </text_codec>
+        <timer_interval>5<!--Таймер проверки подключения. -->
+        </timer_interval>
+        <auto_sent>
+           <enabled>true</enabled>
+           <start_channel>СЖЦ ДОБРОЕ УТРО</start_channel>
+           <stop_channel>СЖЦ ЩТА ПАУЗА</stop_channel>
+       </auto_sent>
+    </tcp_ip_connector>
+</root>

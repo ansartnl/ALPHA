@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <db>
+        <!--Параметры подключения к СУБД -->
+        <connect_timeout>5<!--Таймаут подключения в минутах. -->
+        </connect_timeout>
+        <driver>QOCI<!--Qt драйвер подключения к базе данных. Сейчас может быть ТОЛЬКО 
+        QOCI -->
+        </driver>
+        <host>192.20.1.46<!--Адрес сервера СУБД -->
+        </host>
+        <name>XE<!--Имя базы данных. У Oracle здесь 
+        url-строка подключения -->
+        </name>
+        <password>aerot<!--Пароль пользователя -->
+        </password>
+        <port>1521<!--Порт на котором запущена СУБД -->
+        </port>
+        <user>aerot<!--Пользователь -->
+        </user>
+    </db>
+    <log>
+        <file_size>
+            1048576<!-- Maximum file size (bytes) used by the appender -->
+        </file_size>
+        <level>
+            ALL<!-- OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, ALL -->
+        </level>
+        <max_backup_index>
+            10<!-- Maximum backup count used by the appender -->
+        </max_backup_index>
+        <path>
+            fdpservice.log<!-- Log file path -->
+        </path>
+    </log>
+    <restarter>
+        <disable>true<!--Отключить. -->
+        </disable>
+        <interval>60<!--Таймер проверки состояния потоков. -->
+        </interval>
+        <script_path>restartProcess.bat</script_path>
+    </restarter>
+</root>

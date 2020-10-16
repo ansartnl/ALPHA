@@ -1,0 +1,2 @@
+1. add .\qwt\lib\ to PATH
+2. copy .\qwt\plugins\designer\* to $QTDIR\plugins\designer\

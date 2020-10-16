@@ -1,0 +1,141 @@
+root/Identificator
+	Уникальный идентификатор модуля STCA
+
+root/AirplaneValues
+    Группа настроек для алгоритма расчета столкновений.
+    
+root/AirplaneValues/CrashDistance
+	Если дистанция между самолетами становится менее чем заданная, испускается сигнал столкновения самолетов. В метрах.
+	
+root/AirplaneValues/LowFlightLevelDistance
+	Минимальный интервал вертикального эшелонирования на высоте менее BottomFlightLevel либо между BottomFlightLevel и TopFlightLevel без RVSM оборудования.
+	
+root/AirplaneValues/TopFlightLevelDistance
+	Минимальный интервал вертикального эшелонирования на высоте более BottomFlightLevel либо между BottomFlightLevel и TopFlightLevel с RVSM оборудованием.
+	
+root/AirplaneValues/BottomFlightLevel
+	Нижняя граница RVSM прослойки. В десятках футов.
+
+root/AirplaneValues/TopFlightLevel
+	Верхняя граница RVSM прослойки. В десятках футов.
+
+root/AirplaneValues/CounterDistance
+	Минимум горизонтального эшелонирования при следовании по одной и той же линии пути на одном эшелоне при пересечении встречного эшелона. Метры
+	
+root/AirplaneValues/CounterDistanceWithClimb
+	Минимум горизонтального эшелонирования при следовании на разных эшелонах (хотя бы одно из воздушных суден набирает высоту либо снижается) в случае встречного движения. Метры
+
+root/AirplaneValues/FollowingDistance
+	Минимум горизонтального эшелонирования при следовании по одной и той же линии пути на одном эшелоне при пересечении попутного эшелона. Метры
+	
+root/AirplaneValues/FollowingDistanceWithClimb
+	Минимум горизонтального эшелонирования при следовании на разных эшелонах (хотя бы одно из воздушных суден набирает высоту либо снижается) в случае попутного движения. Метры
+
+root/AirplaneValues/PerpendicularDistance
+	Минимум горизонтального эшелонирования при следовании по одной и той же линии пути на одном эшелоне на пересекающихся путях. Метры
+
+root/AirplaneValues/FollowingAngle
+	максимальный угол для "Одна и та же линия пути". От 0 до 180 градусов.
+
+root/AirplaneValues/CounterAngle
+	минимальный угол для "Линии пути, идущие в противоположных направлениях". От 0 до 180 градусов.
+
+root/AirplaneValues/LifeTime
+	время жизни Asterix сообщения в секундах
+
+root/AirplaneValues/MoveToFutureSeconds
+    Упредить положение воздушного судна на указанное количество секунд
+
+root/AirplaneValues/AllowedCorridorHeight
+	Разрешенное смещение воздушного судна по высоте в пределах которого не учитывается его направление движение вверх или вниз. Метры
+	
+root/AirplaneValues/MinClimbLevel
+	Минимальная скорость набора высоты либо снижения воздушного судна при превышении значения которой начинают учитываться параметры с суффиксом 'WithClimb'. Метры в секунду
+	
+root/Database
+    Группа для настройки подключения к базе данных. Подключение к базе данных необходимо для алгоритма предупреждения попадания воздушного судна в зону ограничений.
+
+root/Database/Driver
+    Qt драйвер базы данных. Для oracle QOCI.
+
+root/Database/Host
+    Адрес сервера баз данных.
+
+root/Database/Name
+    Имя базы данных. Для oracle XE.
+
+root/Database/User
+root/Database/Password 
+    Имя пользователя, пароль.
+
+root/Database/Port
+    Порт сервера базы данных. Для oracle 1521.
+
+root/KeepLog
+    Флаг включающий/выключающий ведение журнала событий.
+
+root/Language
+    Язык для журнала сообщений. Доступные значения: english или russian.
+
+root/Network
+    Группа для настроек сетевых потоков ввода/вывода
+
+root/Network/ListenHost
+root/Network/ListenPort
+    Адрес и порт, который прослушивается приложением для получения Asterix cat. 62.
+
+root/Network/NotifyHost
+root/Network/NotifyPort
+    Адрес и порт, для уведомления о событиях/результатов работы алгоритмов.
+
+root/RestrictionZoneValues
+    Группа для настроек алгоритма, обрабатывающего пересечения воздушного судно с зонами ограничения.
+	
+root/RestrictionZoneValuesDisabled
+	Отключает обработку зон ограничения. Значения: true,false
+
+root/RestrictionZoneValues/KeepLog
+	Включает логирование всех конфликтов с зонами ограничения
+	
+root/RestrictionZoneValues/KeepNotification
+    Если true, предупреждает приближение воздушного судна к зоне ограничения. Иначе предупреждение не высылается. Событие нахождения в зоне отсылается всегда.
+
+root/RestrictionZoneValues/LatitudeCenter
+root/RestrictionZoneValues/LongitudeCenter
+    Используются в качестве центральных точек проецирования координат.
+
+Если предыдущие координаты не заданы используется центр FIR'а из параметра.
+root/RestrictionZoneValues/MainFIR
+    Идентификатор FIR'а
+
+root/RestrictionZoneValues/NotifyInterval
+    В секундах. Минимальный интервал перед зоной ограничения, при попадании в который воздушного судна, высылается предупреждающее сообщение.
+
+root/RestrictionZoneValues/ZoneFilter
+    Фильтр зон ограничения. Если параметр пустой, проверяются все зоны. Иначе проверяются только указанные в параметре.
+    Имена зон разделяются пробелом. Возможные имена:
+      A C D M P R T W
+    Расшифровка:
+    А Alert
+    C Caution
+    D Danger
+    M Military
+    P Prohibited
+    R Restricted
+    T Training
+    W Warning
+
+root/RestrictionZoneValues/SyncDatabaseInterval
+	Интервал для синхронизации зон ограничения в БД с зонами в STCA. Секунды
+	
+root/Log
+	Параметры логирования
+	
+root/Log/FileSize
+	Максимальный размер файла лога
+	
+root/Log/MaxBackupIndex
+	Максимальный индекс файла лога
+	
+root/Log/Path
+	Относительный или абсолютный путь к файлу лога. По умалчанию логируется в файл с именем приложения .log

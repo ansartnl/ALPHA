@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Database>
+        <DatabaseName>agat2</DatabaseName>
+        <Driver>QPSQL</Driver>
+        <Password>aero</Password>
+        <Port>5432</Port>
+        <User>aero</User>
+        <Host>127.0.0.1</Host>
+    </Database>
+    <KeepLog>true</KeepLog>
+    <Servers>
+        <LocalServer>
+            <DatabaseName>aero</DatabaseName>
+            <Driver>QPSQL</Driver>
+            <Password>aero</Password>
+            <Port>5432</Port>
+            <User>aero</User>
+            <Host>127.0.0.1</Host>
+        </LocalServer>
+        <LocalServer2>
+            <DatabaseName>aero2</DatabaseName>
+            <Driver>QPSQL</Driver>
+            <Password>aero</Password>
+            <Port>5432</Port>
+            <User>aero</User>
+            <Host>127.0.0.1</Host>
+        </LocalServer2>
+        <FailServer>
+            <DatabaseName>aero</DatabaseName>
+            <Driver>QPSQL</Driver>
+            <Password>aero</Password>
+            <Port>5432</Port>
+            <User>aero</User>
+            <Host>1.2.3.4</Host>
+        </FailServer>
+    </Servers>
+</root>

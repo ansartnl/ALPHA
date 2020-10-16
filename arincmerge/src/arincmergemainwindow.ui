@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ArincMergeMainWindow</class>
+ <widget class="QMainWindow" name="ArincMergeMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Environment Editor</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMaximumSize</enum>
+    </property>
+    <property name="horizontalSpacing">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>6</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::TabbedView</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="mainMenuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="editAirport"/>
+    <addaction name="editFir"/>
+    <addaction name="editSector"/>
+    <addaction name="editPoint"/>
+    <addaction name="editRoute"/>
+    <addaction name="editHolding"/>
+    <addaction name="editRestrict"/>
+    <addaction name="editRestrictUser"/>
+    <addaction name="editSsa"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="importArinc"/>
+    <addaction name="actionImport_FIR"/>
+    <addaction name="actionRelease_ARINC"/>
+    <addaction name="separator"/>
+    <addaction name="actionChange_FIR"/>
+    <addaction name="separator"/>
+    <addaction name="actionArinc_changes"/>
+    <addaction name="actionSynchronize"/>
+    <addaction name="separator"/>
+    <addaction name="action_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="mainStatusBar"/>
+  <action name="editFir">
+   <property name="text">
+    <string>FIR</string>
+   </property>
+  </action>
+  <action name="editAirport">
+   <property name="text">
+    <string>Airport</string>
+   </property>
+  </action>
+  <action name="editHolding">
+   <property name="text">
+    <string>Holding</string>
+   </property>
+  </action>
+  <action name="editPoint">
+   <property name="text">
+    <string>Point</string>
+   </property>
+  </action>
+  <action name="editRestrict">
+   <property name="text">
+    <string>Restrict</string>
+   </property>
+  </action>
+  <action name="editRoute">
+   <property name="text">
+    <string>Route</string>
+   </property>
+  </action>
+  <action name="editSsa">
+   <property name="text">
+    <string>SSA</string>
+   </property>
+  </action>
+  <action name="importArinc">
+   <property name="text">
+    <string>Load ARINC file</string>
+   </property>
+  </action>
+  <action name="actionImport_FIR">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Import FIR in database</string>
+   </property>
+  </action>
+  <action name="actionRelease_ARINC">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Release ARINC file</string>
+   </property>
+  </action>
+  <action name="editSector">
+   <property name="text">
+    <string>Sector</string>
+   </property>
+  </action>
+  <action name="action_Exit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="editRestrictUser">
+   <property name="text">
+    <string>Restrict User</string>
+   </property>
+  </action>
+  <action name="actionArinc_changes">
+   <property name="text">
+    <string>Arinc changes</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About ...</string>
+   </property>
+  </action>
+  <action name="actionSynchronize">
+   <property name="text">
+    <string>Synchronize</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionChange_FIR">
+   <property name="text">
+    <string>Change current FIR</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_Exit</sender>
+   <signal>triggered()</signal>
+   <receiver>ArincMergeMainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

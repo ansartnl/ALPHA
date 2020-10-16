@@ -1,0 +1,56 @@
+
+SYS_EXTRACT_UTC(SYSTIMESTAMP)
+now() AT TIME ZONE 'UTC'
+
+SYSTIMESTAMP
+now()
+
+DEFAULT now() AT TIME ZONE 'UTC'
+DEFAULT (now() AT TIME ZONE 'UTC')
+
+/*
+REFCURSOR
+{
+    type log_cur_type REFCURSOR;
+    log_cur log_cur_type;
+}
+{
+    --type log_cur_type REFCURSOR;
+    log_cur REFCURSOR;
+}
+
+FUNCTION AFTN.check_and_copy ()    - delete body
+
+pragma autonomous_transaction;     - cut
+*/
+
+-- Oracle package 'AFTN' declaration, please edit to match PostgreSQL syntax.
+-- PostgreSQL does not recognize PACKAGES, using SCHEMA instead.
+
+   temporary delete body
+   
+-- End of Oracle package 'AFTN' declaration
+
+-- Oracle package 'ZONE_PKG' declaration, please edit to match PostgreSQL syntax.
+-- PostgreSQL does not recognize PACKAGES, using SCHEMA instead.
+
+   temporary delete body
+   
+-- End of Oracle package 'ZONE_PKG' declaration
+
+
+--views
+CREATE OR REPLACE VIEW point_view (id, icao, type, name, latitude, longitude, airport) AS SELECT  id, icao, type, name, latitude, longitude, airport 
+ FROM point
+UNION 
+select 0 id, '' ICAO, 100 type, '_NULL_' name , 0 latitude, 0 longitude, '' airport 
+;
+change on
+CREATE OR REPLACE VIEW point_view (id, icao, type, name, latitude, longitude, airport) AS SELECT  id, icao, type, name, latitude, longitude, airport 
+ FROM point
+UNION 
+select 0, '', 100, '_NULL_', 0, 0, ''
+;
+
+-- triggers
+delete *_AC; *_REPLICATOR

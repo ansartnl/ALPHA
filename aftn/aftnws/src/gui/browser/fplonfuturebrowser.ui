@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FplOnFutureBrowser</class>
+ <widget class="QWidget" name="FplOnFutureBrowser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FPL List on future</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QDateEdit" name="dateFilter">
+         <property name="toolTip">
+          <string>Show FPL on set date</string>
+         </property>
+         <property name="statusTip">
+          <string>Show FPL on set date</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="filterEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="filterAction">
+         <property name="toolTip">
+          <string>Filter FPLs by specified text</string>
+         </property>
+         <property name="statusTip">
+          <string>Filter FPLs by specified text</string>
+         </property>
+         <property name="whatsThis">
+          <string>Filter FPLs by specified text</string>
+         </property>
+         <property name="text">
+          <string>Filter FPLs</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QtSqlTableView" name="table">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <property name="verticalScrollMode">
+        <enum>QAbstractItemView::ScrollPerPixel</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtSqlTableView</class>
+   <extends>QTableView</extends>
+   <header>qtsqltableview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

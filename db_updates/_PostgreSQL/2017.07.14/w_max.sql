@@ -1,0 +1,1 @@
+﻿ALTER TABLE meteo_metar ADD COLUMN w_max double precision;

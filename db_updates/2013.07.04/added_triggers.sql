@@ -1,0 +1,53 @@
+INSERT INTO sys_tables_info (TABLENAME) VALUES ('HIST_OUTPUTTELEGRAMS');
+INSERT INTO sys_tables_info (TABLENAME) VALUES ('MAN_AFTN');
+INSERT INTO sys_tables_info (TABLENAME) VALUES ('RECEIVED_AFTN');
+INSERT INTO sys_tables_info (TABLENAME) VALUES ('SENT_AFTN');
+INSERT INTO sys_tables_info (TABLENAME) VALUES ('OUTPUTTELEGRAMS');
+
+commit;
+
+
+CREATE OR REPLACE TRIGGER "HIST_OUTPUTTELEGRAMS_LT" 
+    AFTER INSERT OR UPDATE OR DELETE ON HIST_OUTPUTTELEGRAMS
+    FOR EACH ROW
+    BEGIN
+    -- Touch the row
+      update sys_tables_info set lasttouch = SYS_EXTRACT_UTC(SYSTIMESTAMP) where tablename ='HIST_OUTPUTTELEGRAMS';
+    END;
+/
+
+CREATE OR REPLACE TRIGGER "MAN_AFTN_LT" 
+    AFTER INSERT OR UPDATE OR DELETE ON MAN_AFTN
+    FOR EACH ROW
+    BEGIN
+    -- Touch the row
+      update sys_tables_info set lasttouch = SYS_EXTRACT_UTC(SYSTIMESTAMP) where tablename ='MAN_AFTN';
+    END;
+/
+
+CREATE OR REPLACE TRIGGER "RECEIVED_AFTN_LT" 
+    AFTER INSERT OR UPDATE OR DELETE ON RECEIVED_AFTN
+    FOR EACH ROW
+    BEGIN
+    -- Touch the row
+      update sys_tables_info set lasttouch = SYS_EXTRACT_UTC(SYSTIMESTAMP) where tablename ='RECEIVED_AFTN';
+    END;
+/
+
+CREATE OR REPLACE TRIGGER "SENT_AFTN_LT" 
+    AFTER INSERT OR UPDATE OR DELETE ON SENT_AFTN
+    FOR EACH ROW
+    BEGIN
+    -- Touch the row
+      update sys_tables_info set lasttouch = SYS_EXTRACT_UTC(SYSTIMESTAMP) where tablename ='SENT_AFTN';
+    END;
+/
+
+CREATE OR REPLACE TRIGGER "OUTPUTTELEGRAMS_LT" 
+    AFTER INSERT OR UPDATE OR DELETE ON OUTPUTTELEGRAMS
+    FOR EACH ROW
+    BEGIN
+    -- Touch the row
+      update sys_tables_info set lasttouch = SYS_EXTRACT_UTC(SYSTIMESTAMP) where tablename ='OUTPUTTELEGRAMS';
+    END;
+/

@@ -1,0 +1,34 @@
+# if defined(UNDER_CE)
+#  include <winbase.h>
+# else
+#  include <winver.h>
+# endif
+
+VS_VERSION_INFO VERSIONINFO
+	FILEVERSION @VERSION_MAJOR@,@VERSION_MINOR@,@VERSION_RELEASE@,@VERSION_BUILD@
+	PRODUCTVERSION @VERSION_MAJOR@,@VERSION_MINOR@,@VERSION_RELEASE@,@VERSION_BUILD@
+	FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+	FILEFLAGS VS_FF_DEBUG
+#else
+	FILEFLAGS 0x0L
+#endif
+	FILEOS VOS__WINDOWS32
+	FILETYPE VFT_DLL
+	FILESUBTYPE 0x0L
+	BEGIN
+		BLOCK "StringFileInfo"
+		BEGIN
+			BLOCK "040904B0"
+			BEGIN
+				VALUE "CompanyName", "@COMPANY_NAME@\0"
+				VALUE "FileDescription", "@FILE_DESCRIPTION@\0"
+				VALUE "FileVersion", "@VERSION_STR@\0"
+				VALUE "LegalCopyright", "@LEGAL_COPYRIGHT@\0"
+				VALUE "OriginalFilename", "@OUTPUT_NAME@\0"
+				VALUE "ProductName", "@PRODUCT_NAME@\0"
+			END
+		END
+	END
+/* End of Version info */
+ 

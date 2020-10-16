@@ -1,0 +1,1 @@
+Зайти в C:\XEClient\bin или D:\XEClient\bin и переименовать файл sqlplus.exe в sqlplus_client.exe, запустить _Run.bat

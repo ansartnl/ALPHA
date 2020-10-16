@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/go/go-bottom.png</file>
+        <file>images/go/go-down.png</file>
+        <file>images/go/go-first.png</file>
+        <file>images/go/go-home.png</file>
+        <file>images/go/go-jump.png</file>
+        <file>images/go/go-last.png</file>
+        <file>images/go/go-next.png</file>
+        <file>images/go/go-previous.png</file>
+        <file>images/go/go-top.png</file>
+        <file>images/go/go-up.png</file>
+    </qresource>
+</RCC>

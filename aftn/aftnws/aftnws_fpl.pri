@@ -1,0 +1,52 @@
+INCLUDEPATH   += $$PWD/src/global
+DEPENDPATH    += $$PWD/src/global
+INCLUDEPATH   += $$PWD/src/core
+DEPENDPATH    += $$PWD/src/core
+INCLUDEPATH   += $$PWD/src/data
+DEPENDPATH    += $$PWD/src/data
+INCLUDEPATH   += $$PWD/src/gui/browser
+DEPENDPATH    += $$PWD/src/gui/browser
+INCLUDEPATH   += $$PWD/src/gui/dialog
+DEPENDPATH    += $$PWD/src/gui/dialog
+INCLUDEPATH   += $$PWD/src/gui/editor
+DEPENDPATH    += $$PWD/src/gui/editor
+INCLUDEPATH   += $$PWD/src/kernel/models/proxy
+DEPENDPATH    += $$PWD/src/kernel/models/proxy
+INCLUDEPATH   += $$PWD/src/kernel/views
+DEPENDPATH    += $$PWD/src/kernel/views
+INCLUDEPATH   += $$PWD/src/gui/custom
+DEPENDPATH    += $$PWD/src/gui/custom
+
+HEADERS       += $$PWD/src/global/printutils.h
+HEADERS       += $$PWD/src/core/fpl.h
+HEADERS       += $$PWD/src/core/rpl.h
+HEADERS       += $$PWD/src/core/notam.h
+HEADERS       += $$PWD/src/data/AFTNDao.h
+
+HEADERS       += $$PWD/src/gui/browser/abstractbrowser.h
+HEADERS       += $$PWD/src/gui/dialog/abstractdialog.h
+HEADERS       += $$PWD/src/gui/editor/fpleditor.h
+HEADERS       += $$PWD/src/kernel/models/proxy/sectionsproxymodel.h
+HEADERS       += $$PWD/src/kernel/views/qtsqltableview.h
+HEADERS       += $$PWD/src/kernel/views/qtheaderview.h
+HEADERS       += $$PWD/src/gui/custom/customtextedit.h
+HEADERS       += $$PWD/src/global/translations.h
+HEADERS       += $$PWD/src/gui/browser/fplbrowser.h
+
+SOURCES       += $$PWD/src/gui/browser/abstractbrowser.cpp
+SOURCES       += $$PWD/src/global/printutils.cpp
+SOURCES       += $$PWD/src/gui/dialog/abstractdialog.cpp
+SOURCES       += $$PWD/src/core/fpl.cpp
+SOURCES       += $$PWD/src/core/rpl.cpp
+SOURCES       += $$PWD/src/core/notam.cpp
+SOURCES       += $$PWD/src/data/AFTNDao.cpp
+SOURCES       += $$PWD/src/gui/editor/fpleditor.cpp
+SOURCES       += $$PWD/src/kernel/models/proxy/sectionsproxymodel.cpp
+SOURCES       += $$PWD/src/kernel/views/qtsqltableview.cpp
+SOURCES       += $$PWD/src/kernel/views/qtheaderview.cpp
+SOURCES       += $$PWD/src/gui/custom/customtextedit.cpp
+SOURCES       += $$PWD/src/global/translations.cpp
+SOURCES       += $$PWD/src/gui/browser/fplbrowser.cpp
+
+FORMS         += $$PWD/src/gui/editor/fpleditor.ui
+FORMS         += $$PWD/src/gui/browser/fplbrowser.ui

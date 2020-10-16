@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>856</width>
+    <height>816</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="styleWidget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Style:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="styleCombo"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="ColorWidget" name="colorWidget" native="true"/>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="enabledCheckBox">
+         <property name="text">
+          <string>Enabled</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="margin">
+         <number>1</number>
+        </property>
+        <item>
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="tabPosition">
+           <enum>QTabWidget::North</enum>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Triangular</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Tab 1</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_16">
+            <item>
+             <widget class="QWidget" name="frameWidget" native="true">
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="0">
+                <widget class="QFrame" name="frame_4">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_2">
+                    <property name="text">
+                     <string>Box</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_14">
+                    <property name="text">
+                     <string>Plain</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QFrame" name="frame_5">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="text">
+                     <string>Box</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>Raised</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QFrame" name="frame_6">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="text">
+                     <string>Box</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>Shunken</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QFrame" name="frame_7">
+                 <property name="frameShape">
+                  <enum>QFrame::Panel</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <item>
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>Panel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>Plain</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QFrame" name="frame_8">
+                 <property name="frameShape">
+                  <enum>QFrame::Panel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_8">
+                  <item>
+                   <widget class="QLabel" name="label_6">
+                    <property name="text">
+                     <string>Panel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="text">
+                     <string>Raised</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QFrame" name="frame_9">
+                 <property name="frameShape">
+                  <enum>QFrame::Panel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <item>
+                   <widget class="QLabel" name="label_7">
+                    <property name="text">
+                     <string>Panel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>Shunken</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QFrame" name="frame_10">
+                 <property name="frameShape">
+                  <enum>QFrame::WinPanel</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <widget class="QLabel" name="label_8">
+                    <property name="text">
+                     <string>WinPanel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>Plain</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QFrame" name="frame_11">
+                 <property name="frameShape">
+                  <enum>QFrame::WinPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <item>
+                   <widget class="QLabel" name="label_9">
+                    <property name="text">
+                     <string>WinPanel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_20">
+                    <property name="text">
+                     <string>Raised</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QFrame" name="frame_12">
+                 <property name="frameShape">
+                  <enum>QFrame::WinPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_12">
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="text">
+                     <string>WinPanel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>Shunken</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QFrame" name="frame_16">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="text">
+                     <string>StyledPanel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>Plain</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QFrame" name="frame_17">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <item>
+                   <widget class="QLabel" name="label_12">
+                    <property name="text">
+                     <string>StyledPanel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>Raised</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QFrame" name="frame_18">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_15">
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="text">
+                     <string>StyledPanel</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>Shunken</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="mainWidget" native="true">
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="0" column="0" colspan="2">
+                <widget class="QPushButton" name="pushButton_9">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2" colspan="2">
+                <widget class="QPushButton" name="pushButton_10">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4" colspan="2">
+                <widget class="QPushButton" name="pushButton_11">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="6" colspan="2">
+                <widget class="QPushButton" name="pushButton_12">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="8" rowspan="3">
+                <widget class="QToolBox" name="toolBox_3">
+                 <property name="currentIndex">
+                  <number>0</number>
+                 </property>
+                 <widget class="QWidget" name="page_5">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>357</width>
+                    <height>114</height>
+                   </rect>
+                  </property>
+                  <attribute name="label">
+                   <string>Page 1</string>
+                  </attribute>
+                  <layout class="QVBoxLayout" name="verticalLayout_47">
+                   <item>
+                    <widget class="QComboBox" name="comboBox_3">
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>New Item</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSpinBox" name="spinBox_3">
+                     <property name="buttonSymbols">
+                      <enum>QAbstractSpinBox::PlusMinus</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="page_6">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>96</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <attribute name="label">
+                   <string>Page 2</string>
+                  </attribute>
+                 </widget>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QToolButton" name="toolButton_17">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QToolButton" name="toolButton_18">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QToolButton" name="toolButton_19">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QToolButton" name="toolButton_20">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QToolButton" name="toolButton_21">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="arrowType">
+                  <enum>Qt::UpArrow</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="5">
+                <widget class="QToolButton" name="toolButton_22">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="arrowType">
+                  <enum>Qt::DownArrow</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="6">
+                <widget class="QToolButton" name="toolButton_23">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="arrowType">
+                  <enum>Qt::LeftArrow</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="7">
+                <widget class="QToolButton" name="toolButton_24">
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="arrowType">
+                  <enum>Qt::RightArrow</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox_3">
+                 <property name="title">
+                  <string>GroupBox</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_48">
+                  <item>
+                   <widget class="QRadioButton" name="radioButton_5">
+                    <property name="text">
+                     <string>RadioButton</string>
+                    </property>
+                    <property name="checked">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="radioButton_6">
+                    <property name="text">
+                     <string>RadioButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="2" colspan="3">
+                <widget class="QScrollArea" name="scrollArea_3">
+                 <property name="verticalScrollBarPolicy">
+                  <enum>Qt::ScrollBarAlwaysOn</enum>
+                 </property>
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>98</width>
+                    <height>180</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_49">
+                   <item>
+                    <widget class="QCheckBox" name="checkBox_15">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBox_16">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                     <property name="tristate">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBox_17">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBox_18">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBox_19">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBox_20">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBox_21">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item row="2" column="5" colspan="3">
+                <widget class="QDial" name="dial_3">
+                 <property name="notchesVisible">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0" colspan="2">
+                <widget class="QListWidget" name="listWidget_3">
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>New Item</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>New Item</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>New Item</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>New Item</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>New Item</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="3" column="2" colspan="6">
+                <widget class="QTableWidget" name="tableWidget_3">
+                 <row>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </row>
+                 <row>
+                  <property name="text">
+                   <string>2</string>
+                  </property>
+                 </row>
+                 <row>
+                  <property name="text">
+                   <string>3</string>
+                  </property>
+                 </row>
+                 <row>
+                  <property name="text">
+                   <string>4</string>
+                  </property>
+                 </row>
+                 <row>
+                  <property name="text">
+                   <string>5</string>
+                  </property>
+                 </row>
+                 <row>
+                  <property name="text">
+                   <string>6</string>
+                  </property>
+                 </row>
+                 <column>
+                  <property name="text">
+                   <string>New Column</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>New Column</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>New Column</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>New Column</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+               <item row="3" column="8">
+                <widget class="QTreeWidget" name="treeWidget">
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>New Column</string>
+                  </property>
+                 </column>
+                 <item>
+                  <property name="text">
+                   <string>New Item</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>New Item</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>New Subitem</string>
+                   </property>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>New Subitem</string>
+                    </property>
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                   </item>
+                  </item>
+                 </item>
+                </widget>
+               </item>
+               <item row="4" column="0" colspan="2">
+                <widget class="QSlider" name="horizontalSlider_3">
+                 <property name="value">
+                  <number>30</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="tickPosition">
+                  <enum>QSlider::TicksBelow</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2" colspan="2">
+                <widget class="QLCDNumber" name="lcdNumber_7"/>
+               </item>
+               <item row="4" column="4" colspan="2">
+                <widget class="QLCDNumber" name="lcdNumber_8">
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Outline</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="6" colspan="2">
+                <widget class="QLCDNumber" name="lcdNumber_9">
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="8">
+                <widget class="QProgressBar" name="progressBar_3">
+                 <property name="value">
+                  <number>48</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0" colspan="9">
+                <widget class="QLineEdit" name="lineEdit_3"/>
+               </item>
+               <item row="6" column="0" rowspan="2" colspan="2">
+                <widget class="QTextEdit" name="textEdit_3">
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;qwe&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;qwe&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;34&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="2" rowspan="2" colspan="4">
+                <widget class="QPlainTextEdit" name="plainTextEdit_3">
+                 <property name="plainText">
+                  <string>123qwedqwer
+awtrlawe
+rtlqw
+rtqwer</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="6" colspan="2">
+                <widget class="QTimeEdit" name="timeEdit_3">
+                 <property name="displayFormat">
+                  <string>HH:mm:ss</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="6" colspan="3">
+                <widget class="QDateTimeEdit" name="dateTimeEdit_3">
+                 <property name="displayFormat">
+                  <string>dd.MM.yyyy HH:mm:ss</string>
+                 </property>
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="8">
+                <widget class="QDateEdit" name="dateEdit_3">
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Tab 2</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_34">
+        <property name="margin">
+         <number>1</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>856</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="mainStatusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ColorWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">ColorWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+-- exist in 2015.08.27
+--CREATE TABLE centralpointforallfirs 
+--(
+--	latitude double precision,
+--	longitude double precision
+--);

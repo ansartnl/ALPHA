@@ -1,0 +1,33 @@
+BUILDING
+
+UNIX
+  RELEASE
+    mkdir qtcreator-build
+		cd qtcreator-build
+    cmake .. -DCMAKE_BUILD_TYPE=Release
+    make
+  DEBUG
+    mkdir qtcreator-build-debug
+		cd qtcreator-build-debug
+    cmake .. -DCMAKE_BUILD_TYPE=Debug
+    make
+
+WINDOWS
+  RELEASE
+    mkdir qtcreator-build
+		cd qtcreator-build
+    cmake .. -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles"
+    mingw32-make
+  DEBUG
+    mkdir qtcreator-build-debug
+		cd qtcreator-build-debug
+    cmake .. -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles"
+    mingw32-make
+
+
+Debug Techniques
+Place config.xml into your build directory, and start service with parameter -e, e. g.
+cp config.xml qtcreator-build/config.xml
+qtcreator-build/aftnservice -e
+
+

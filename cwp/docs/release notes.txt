@@ -1,0 +1,224 @@
+version 1.0.1 (2011.02.21)
+
+version 1.0.2 (2011.03.03)
+   - new echelonswidget
+   - reminders
+   - auto collapse
+   - transfer
+
+version 1.0.3 (2011.03.15)
+   - correct SSA ( problem with arinc file remains )
+   - add reminders ( SPI, special codes, TRACK )
+   - uncorrelated formular type
+   - old new gauge
+   - filters on the heights ( AFL, CFL, TFL )
+   - STCA
+
+version 1.0.4 (2011.03.22)
+   - filter on the FL with a visibility of targets
+   - add reminders ( Check FL, FL, FL DEV )
+   - show route in lists
+
+version 1.0.5.362 (2011.04.04)
+   - SFPL tracer
+
+version 1.0.6.638 (2011.05.13)
+   - OLDI v1.0
+   
+version 1.0.7.764 (2011.06.13)
+   - new toolbar
+   - OLDI v1.03
+   
+version 1.0.8.1272 (2011.08.31)
+   - feet and knots
+   - restriction warning
+   - meteo
+   
+version 1.0.9.1361 (2011.09.23)
+   - user restrictions
+   - multifir sector
+   
+version 1.1.0.1630 (2011.11.01)
+   - alpha channel for others FIR
+   - write in log user login/logout
+   - default bank, level and etc.
+   - fullscreen mode
+   - lost track reminder delta time
+   - ACT with FPL
+   - SID/STAR skip from route
+   - auto clear FPL and SFPL
+   - RVSM by CFL
+   - PEL and RFL
+   - zoom slider bug fix
+   - reminder leaving route
+   - cancel ACT and rebinding
+
+version 1.1.1.1671 (2011.11.11)
+   - lucky number
+   
+version 1.1.2.1737 (2011.11.23)
+   - transfer out by timeout
+   - FPL on cwp
+   - save environment
+   
+version 1.1.3.1910 (2011.12.23)
+   - OLDI NodesViewer with FMTP CurrentStatus ( status text )
+   - more shape for plane and gauge
+   - fmtp v. 1.0.4.1901
+
+version 1.1.4.1968 (2012.01.04)
+   - coordinate representation
+   - feet/meters CFL, TFL and etc. in test mode
+   
+version 1.1.5.2049 (2012.01.19)
+   - stca with sector type
+   - user restriction zone synchronization
+   
+version 1.1.6.2222 (2012.02.21)
+   - route corridor in config
+   - FPL for route points like TAHIR/M078F330
+   - find for custom sector
+   - cwp with pulsar
+   - REPLICATION v 0.1
+
+version 1.0.1     (2012.07.30)
+   - stop from supervisor
+   - disable COF, HOP, ROF
+   - landing
+   - pick coordinates
+   - bearing
+   - show formular border
+   - reminders only for assumed
+   - STAR calculation
+   - patch sectors calculation
+   - simulator + cwp + fdp UserRestriction, Meteo, Meteo KRAMS
+   - drop reminder Check FL
+   - sector border
+   - list colors
+   - select SID/STAR with points in lists
+   - formular add AZIMUTH and DISTANCE
+   - dialog popup position
+   - GUI meteo
+   - radial circular grid
+   - custom echelon value
+   - simulator + cwp  meteo contour exchange, start/stop exercise in XtProto
+   - bearing with SAC SIC
+   - text font size
+   - change DF(direction finders)
+   - add user restriction types
+   - draw point pixmap
+   - runway occupation
+
+========================================================================
+...
+========================================================================
+
+version 1.0.1.11601     (2013.09.17)
+   - aftn_message_processor/empty18field, users/readonly_TL_QFE in config file
+   - fix OLDI with field 18
+   
+version 1.0.1.11615     (2013.09.18)
+   - store the value QFE on exit
+   - dblclick editing ACID in lists
+   - stands in lists and on ground toolbox
+
+version 1.0.1.11653     (2013.09.24)
+   - fix bug 829 ( When you load the structure of SID / STAR to add height to FL AD )
+   - fix bug 832 ( Lists of planning warning(for approximation the track) )
+
+version 1.0.1.11660     (2013.09.25)
+   - ground color scheme
+   
+version 1.0.1.11815     (2013.10.10)
+   - change font size for layers, stands, user restriction
+   
+version 1.0.1.11832     (2013.10.11)
+   - fix bug 829 ( change font size for lists header )
+   
+version 1.0.1.11868     (2013.10.15)
+   - fix bug 822 ( approximation crash )
+   
+version 1.0.1.11898     (2013.10.18)
+   - simulation add points only for route part
+   - reminders close on double click
+   - MTCD tooltip
+   - STCA only for flying
+
+version 1.0.1.11945     (2013.10.23)
+   - double code (partially)
+   
+version 1.0.1.11977     (2013.10.25)
+   - show route on assume in config
+   - save focus point
+
+version 1.0.1.12020     (2013.10.28)
+   - fix bug 946 ( leave route reminder )
+   - meteo KRAMS QFE
+   - double code
+
+version 1.0.1.12058     (2013.10.30)
+   - fix bug 955 ( cancel ACT )
+   - fix bug 956 ( crash )
+
+version 1.0.1.12111     (2013.11.04)
+   - ACID red if STCA or spec code
+   - restore focus is set formular default position
+   - fix bug 958 ( OLDI )
+
+version 1.0.1.12293     (2013.11.18)
+   - test auto transfer without COPout (COF)
+   
+version 1.0.1.12505    (2013.12.11)
+   - task 1076 ( sectoring )
+   
+version 1.0.1.12571    (2013.12.18)
+   - task 1086 ( resize )
+   - task 1077 ( double code re-act )
+   - task 1084 ( QNH validator )
+
+version 1.0.1.12625    (2013.12.23)
+   - fix duplication reminder "ASSUME"
+   - fix initial FL in SimulatorTrack
+   - send ACT to NS without COPout
+   - fix bug 1120 ( next point )
+   - sectoring after our sector
+
+version 1.0.1.12629    (2013.12.24)
+   - ListAC refresh in thread
+   
+version 1.0.1.12659    (2013.12.27)
+   - rollback ListAC refresh in thread
+   - fix sectoring for departure
+   - task 1116 ( sector border )
+
+version 1.0.1.12679    (2013.12.30)
+   - fix bug 1138 ( crash )
+   
+version 1.0.1.12687    (2013.12.31)
+   - task 1142 ( red stands )
+   - task 1144 ( font )
+
+version 1.0.1.12725    (2014.01.06)
+   - LabelConstructor adjust font size
+   - adjust some dialogs
+   
+version 1.0.1.12932    (2014.02.07)
+   - task 1179 ( bearing text )
+   - user "maps" layer added
+   - task 1185 ( save settings )
+
+version 1.0.1.13020    (2014.02.24)
+   - new meteo types added
+   
+version 1.0.1.13537    (2014.06.04)
+   - task 1394 ( QFE -> QNH )
+   - task 1395 ( SI in config )
+   - password on FM values
+
+version 1.0.1.XXXX    (2014.06.XX)
+   - task 1151
+   - task 1154
+   - task 1160
+   - task 1553
+   - task 1561
+   - task 1563

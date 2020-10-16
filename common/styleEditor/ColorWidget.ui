@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ColorWidget</class>
+ <widget class="QWidget" name="ColorWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>217</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Active</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Inactive</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Disabled</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="Line" name="line_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Window</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QtColorButton" name="windowActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QtColorButton" name="windowInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QtColorButton" name="windowDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>WindowText</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QtColorButton" name="windowTextActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QtColorButton" name="windowTextInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QtColorButton" name="windowTextDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Base</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QtColorButton" name="baseActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QtColorButton" name="baseInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QtColorButton" name="baseDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>AlternateBase</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QtColorButton" name="alternateBaseActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QtColorButton" name="alternateBaseInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QtColorButton" name="alternateBaseDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Text</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QtColorButton" name="textActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QtColorButton" name="textInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QtColorButton" name="textDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>ToolTipBase</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QtColorButton" name="toolTipBaseActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QtColorButton" name="toolTipBaseInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QtColorButton" name="toolTipBaseDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>ToolTipText</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QtColorButton" name="toolTipTextActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QtColorButton" name="toolTipTextInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QtColorButton" name="toolTipTextDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Button</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QtColorButton" name="buttonActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2">
+    <widget class="QtColorButton" name="buttonInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="3">
+    <widget class="QtColorButton" name="buttonDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>ButtonText</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QtColorButton" name="buttonTextActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="2">
+    <widget class="QtColorButton" name="buttonTextInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="3">
+    <widget class="QtColorButton" name="buttonTextDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_13">
+     <property name="text">
+      <string>BrightText</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QtColorButton" name="brightTextActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="2">
+    <widget class="QtColorButton" name="brightTextInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="3">
+    <widget class="QtColorButton" name="brightTextDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0" colspan="4">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="label_14">
+     <property name="text">
+      <string>Light</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QtColorButton" name="lightActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="2">
+    <widget class="QtColorButton" name="lightInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="3">
+    <widget class="QtColorButton" name="lightDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLabel" name="label_15">
+     <property name="text">
+      <string>MidLight</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="QtColorButton" name="midLightActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="2">
+    <widget class="QtColorButton" name="midLightInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="3">
+    <widget class="QtColorButton" name="midLightDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_17">
+     <property name="text">
+      <string>Mid</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="QtColorButton" name="midActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="2">
+    <widget class="QtColorButton" name="midInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="3">
+    <widget class="QtColorButton" name="midDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_16">
+     <property name="text">
+      <string>Dark</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QtColorButton" name="darkActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="2">
+    <widget class="QtColorButton" name="darkInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="3">
+    <widget class="QtColorButton" name="darkDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_18">
+     <property name="text">
+      <string>Shadow</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1">
+    <widget class="QtColorButton" name="shadowActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="2">
+    <widget class="QtColorButton" name="shadowInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="3">
+    <widget class="QtColorButton" name="shadowDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0" colspan="4">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="0">
+    <widget class="QLabel" name="label_19">
+     <property name="text">
+      <string>Highlight</string>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="1">
+    <widget class="QtColorButton" name="highlightActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="2">
+    <widget class="QtColorButton" name="highlightInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="3">
+    <widget class="QtColorButton" name="highlightDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="0">
+    <widget class="QLabel" name="label_20">
+     <property name="text">
+      <string>HiglightedText</string>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="1">
+    <widget class="QtColorButton" name="highlightedTextActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="2">
+    <widget class="QtColorButton" name="highlightedTextInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="3">
+    <widget class="QtColorButton" name="highlightedTextDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="0">
+    <widget class="QLabel" name="label_21">
+     <property name="text">
+      <string>Link</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="1">
+    <widget class="QtColorButton" name="linkActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="2">
+    <widget class="QtColorButton" name="linkInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="3">
+    <widget class="QtColorButton" name="linkDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="0">
+    <widget class="QLabel" name="label_22">
+     <property name="text">
+      <string>LinkVisited</string>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="1">
+    <widget class="QtColorButton" name="linkVisitedActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="2">
+    <widget class="QtColorButton" name="linkVisitedInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="3">
+    <widget class="QtColorButton" name="linkVisitedDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="23" column="0" colspan="4">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="0">
+    <widget class="QLabel" name="label_23">
+     <property name="text">
+      <string>NoRole</string>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="1">
+    <widget class="QtColorButton" name="noRoleActive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="2">
+    <widget class="QtColorButton" name="noRoleInactive">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="3">
+    <widget class="QtColorButton" name="noRoleDisabled">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtColorButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">QtColorButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

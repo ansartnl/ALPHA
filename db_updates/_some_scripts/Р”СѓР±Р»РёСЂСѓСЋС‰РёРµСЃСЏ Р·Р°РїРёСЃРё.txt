@@ -1,0 +1,4 @@
+SELECT point_id, zone_id, COUNT(point_id)
+FROM zone_point
+GROUP BY point_id, zone_id
+HAVING COUNT(point_id) > 1;

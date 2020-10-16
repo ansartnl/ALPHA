@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<language>russian</language>	<!-- "russian" or "english" -->
+	<names>
+		<english>
+			<table>Backups</table>
+			<window>Recovery tool for some other products</window>
+		<!--	Имена для кнопок:	-->
+			<run>Execute</run>
+			<copy>Backup</copy>
+			<rename>Rename</rename>
+			<delete>Remove</delete>
+			<refresh>Refresh</refresh>
+			<close>Exit</close>
+		</english>
+		<russian>
+			<table>Бэкапы</table>
+			<window>ПО для восстановления и обновления АС УВД и ТДК</window>
+		<!--	Имена для кнопок:	-->
+			<run>Запустить</run>
+			<copy>Скопировать</copy>
+			<rename>Переименовать</rename>
+			<delete>Удалить</delete>
+			<refresh>Обновить</refresh>
+			<close>Закрыть</close>
+		</russian>
+	</names>
+	<paths>
+		<dest_dir>d:/temp/backups</dest_dir>	<!-- Директория, где лежат файлы -->
+		<copy_dir>d:/temp/flash emu</copy_dir>	<!-- Путь к флэшке -->
+		<script>d:/temp/run.bat</script>	<!-- Путь к скрипту -->
+		<mask>update*</mask>			<!-- Маска для поиска файлов -->
+	</paths>
+</root>

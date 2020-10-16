@@ -1,0 +1,1 @@
+C:\Program Files\PostgreSQL\9.3\bin>psql -d aero -U aero -v ON_ERROR_STOP=1 -f C:\temp\PostgreSQL\output.sql

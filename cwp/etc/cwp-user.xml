@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <airplane>
+        <deflexion_type>kilometer</deflexion_type>
+        <high_FL>680</high_FL>
+        <history_number_of_points>1</history_number_of_points>
+        <low_FL>0</low_FL>
+        <speed_distance_menu_type>ACC</speed_distance_menu_type>
+    </airplane>
+    <users>
+        <TextSize>
+            <CurTextSize>0</CurTextSize>
+        </TextSize>
+        <corridor_route>yes</corridor_route>
+        <current_fdp_name>FDP</current_fdp_name>
+        <current_rdp_name>Main RDP</current_rdp_name>
+        <current_sector></current_sector>
+        <current_sector_airports>UMMS</current_sector_airports>
+        <current_sector_type></current_sector_type>
+        <current_sectors_short_name></current_sectors_short_name>
+        <draw_Borderpoints>yes</draw_Borderpoints>
+        <draw_points>yes</draw_points>
+        <fir_sectors>----CTR-TMA1-WL-NM----------SL-NL-WM-NU-WU-SM-SU-TMA2-GTMA2-GTMA1-GCTR</fir_sectors>
+        <force_sector>false</force_sector>
+        <hide_plains>false</hide_plains>
+        <sectortype_app>true</sectortype_app>
+        <transfer_sectors></transfer_sectors>
+    </users>
+</root>

@@ -1,0 +1,39 @@
+INCLUDEPATH   += $$PWD
+DEPENDPATH    += $$PWD
+
+HEADERS       += $$PWD/OLDIProc.h
+HEADERS       += $$PWD/OLDIMessage.h
+HEADERS       += $$PWD/OLDIMessages.h
+HEADERS       += $$PWD/OLDIMesABI.h
+HEADERS       += $$PWD/OLDIMesACT.h
+HEADERS       += $$PWD/OLDIMesCOD.h
+HEADERS       += $$PWD/OLDIMesCOF.h
+HEADERS       += $$PWD/OLDIMesERR.h
+HEADERS       += $$PWD/OLDIMesFPL.h
+HEADERS       += $$PWD/OLDIMesHOP.h
+HEADERS       += $$PWD/OLDIMesINF.h
+HEADERS       += $$PWD/OLDIMesLAM.h
+HEADERS       += $$PWD/OLDIMesMAC.h
+HEADERS       += $$PWD/OLDIMesMAS.h
+HEADERS       += $$PWD/OLDIMesROF.h
+HEADERS       += $$PWD/OLDIMesSTS.h
+HEADERS       += $$PWD/OLDIMesURZ.h
+
+HEADERS       += $$PWD/OLDIClients.h
+
+SOURCES       += $$PWD/OLDIProc.cpp
+SOURCES       += $$PWD/OLDIMessage.cpp
+SOURCES       += $$PWD/OLDIMesABI.cpp
+SOURCES       += $$PWD/OLDIMesACT.cpp
+SOURCES       += $$PWD/OLDIMesCOD.cpp
+SOURCES       += $$PWD/OLDIMesCOF.cpp
+SOURCES       += $$PWD/OLDIMesERR.cpp
+SOURCES       += $$PWD/OLDIMesFPL.cpp
+SOURCES       += $$PWD/OLDIMesHOP.cpp
+SOURCES       += $$PWD/OLDIMesINF.cpp
+SOURCES       += $$PWD/OLDIMesLAM.cpp
+SOURCES       += $$PWD/OLDIMesMAC.cpp
+SOURCES       += $$PWD/OLDIMesMAS.cpp
+SOURCES       += $$PWD/OLDIMesROF.cpp
+SOURCES       += $$PWD/OLDIMesSTS.cpp
+SOURCES       += $$PWD/OLDIMesURZ.cpp

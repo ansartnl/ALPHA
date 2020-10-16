@@ -1,0 +1,18 @@
+set serveroutput on;
+declare
+cursor c is
+select object_name, object_type from user_objects
+where object_type in ('PROCEDURE', 'FUNCTION', 'PACKAGE', 'PACKAGE BODY', 'TRIGGER')
+and status='INVALID' ;
+begin
+ for i in c loop
+ begin
+   dbms_ddl.alter_compile(i.object_type, user, i.object_name);
+  dbms_output.put_line('Object '||i.object_name||' compiled successfully.');
+ exception
+ when others then
+  dbms_output.put_line('Object '||i.object_name||' was not compiled. Check errors.');
+ end;
+ end loop;
+end;
+/

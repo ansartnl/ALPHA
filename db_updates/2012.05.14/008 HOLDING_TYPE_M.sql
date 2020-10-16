@@ -1,0 +1,16 @@
+CREATE TABLE HOLDING_TYPE_M 
+(
+  ID NUMBER(10, 0) NOT NULL 
+, NAME VARCHAR2(100 BYTE) NOT NULL 
+, CONSTRAINT HOLDING_TYPE_M_PK PRIMARY KEY 
+  (
+    ID 
+  )
+  ENABLE 
+);
+
+COMMENT ON TABLE HOLDING_TYPE_M IS 'Provide convertion from numberic type of holding zone to textual';
+
+COMMENT ON COLUMN HOLDING_TYPE_M.ID IS 'Primary key';
+
+COMMENT ON COLUMN HOLDING_TYPE_M.NAME IS 'Textual description';

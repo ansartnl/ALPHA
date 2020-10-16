@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="NetworkServer">images/NetworkServer.png</file>
+        <file alias="CWP">images/CWP.png</file>
+        <file alias="STCA">images/STCA.png</file>
+        <file alias="FDP">images/FDP.png</file>
+        <file alias="FMTP">images/FMTP.png</file>
+        <file alias="Refresh">images/Refresh.png</file>
+        <file alias="Log">images/Log.png</file>
+        <file alias="NetworkServerOff">images/NetworkServerOff.png</file>
+        <file alias="NetworkServerInvalid">images/NetworkServerInvalid.png</file>
+        <file alias="AFTNWS">images/AFTNWS.png</file>
+        <file alias="Users">images/Users.png</file>
+        <file alias="Restart">images/Restart.png</file>
+        <file alias="DBSYNC">images/DBSYNC.png</file>
+        <file alias="Start">images/Start.png</file>
+        <file alias="Stop">images/Stop.png</file>
+        <file alias="Service">images/Service.png</file>
+        <file alias="Server">images/Server.png</file>
+        <file alias="Activate">images/Activate.png</file>
+        <file alias="Script">images/Script.png</file>
+        <file alias="Shutdown">images/Shutdown.png</file>
+        <file alias="Reboot">images/Reboot.png</file>
+        <file alias="Print">images/Print.png</file>
+        <file alias="Process">images/Process.png</file>
+        <file alias="ListViewHeight">images/ListViewHeight.png</file>
+    </qresource>
+</RCC>

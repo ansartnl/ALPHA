@@ -1,0 +1,9 @@
+ALTER TABLE HOLDING 
+ADD (H_MIN NUMBER(10, 0) DEFAULT 0 );
+
+ALTER TABLE HOLDING 
+ADD (H_MAX NUMBER(10, 0) DEFAULT 0 );
+
+COMMENT ON COLUMN HOLDING.H_MIN IS 'Bottom border of holding (in meters)';
+
+COMMENT ON COLUMN HOLDING.H_MAX IS 'Top border of holding (in meters)';

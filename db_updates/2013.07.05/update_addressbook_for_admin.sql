@@ -1,0 +1,1 @@
+UPDATE users SET addressbook = 1 WHERE USER_NAME = 'admin'

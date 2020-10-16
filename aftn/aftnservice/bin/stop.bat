@@ -1,0 +1,1 @@
+aftnservice.exe -t

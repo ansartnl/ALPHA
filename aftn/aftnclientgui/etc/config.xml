@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <network>
+    <aftn_name>SOMENAME</aftn_name>
+    <aftn_server_1>localhost</aftn_server_1>
+    <aftn_server_2>localhost</aftn_server_2>
+    <log_file>aftnclient.log</log_file>
+    <ping_timeout>0</ping_timeout>
+    <port>10200</port>
+    <rawdata_file>aftnclient.raw</rawdata_file>
+  </network>
+</root>

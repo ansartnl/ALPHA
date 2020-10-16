@@ -1,0 +1,6 @@
+INSERT into zone_boundary
+(type, sn, latitude, longitude, arc_latitude, arc_longitude, arc_distance, zone_id)
+
+(SELECT type, sn, latitude, longitude, arc_latitude, arc_longitude, arc_distance, <SECTOR_ID> zone_id
+FROM zone_boundary
+WHERE zone_boundary.zone_id = <ZONE_ID>)

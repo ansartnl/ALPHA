@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AFTN FPL</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images:/32x32/application/airplane.png</normaloff>images:/32x32/application/airplane.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::TabbedView</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>808</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="printActionsSeparator"/>
+    <addaction name="actionLogin"/>
+    <addaction name="separator"/>
+    <addaction name="actionCreate_telegram"/>
+    <addaction name="actionAddress_book"/>
+    <addaction name="actionAuto_answer_on_error"/>
+    <addaction name="separator"/>
+    <addaction name="actionFont"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="editMenu">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <widget class="QMenu" name="navigateMenu">
+     <property name="title">
+      <string>&amp;Navigate</string>
+     </property>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="tableMenu">
+     <property name="title">
+      <string>Ta&amp;ble</string>
+     </property>
+     <property name="separatorsCollapsible">
+      <bool>false</bool>
+     </property>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="actionUpdate"/>
+    <addaction name="separator"/>
+    <addaction name="editMenuSeparator1"/>
+    <addaction name="separator"/>
+    <addaction name="tableMenu"/>
+    <addaction name="separator"/>
+    <addaction name="navigateMenu"/>
+    <addaction name="separator"/>
+    <addaction name="configureToolBarsAction"/>
+   </widget>
+   <widget class="QtMenuView" name="menuDatabaseObjects">
+    <property name="title">
+     <string>Database Objects</string>
+    </property>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="editMenu"/>
+   <addaction name="menuDatabaseObjects"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>Main</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="editToolBar">
+   <property name="windowTitle">
+    <string>Edit</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="editToolBarSeparator1"/>
+   <addaction name="configureToolBarsAction"/>
+  </widget>
+  <widget class="QToolBar" name="printToolBar">
+   <property name="windowTitle">
+    <string>Print</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="navigateToolBar">
+   <property name="windowTitle">
+    <string>Navigate</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionUpdate"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="floating">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>Database objects</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTreeView" name="databaseObjectsView">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="verticalScrollMode">
+        <enum>QAbstractItemView::ScrollPerPixel</enum>
+       </property>
+       <property name="uniformRowHeights">
+        <bool>true</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <attribute name="headerMinimumSectionSize">
+        <number>17</number>
+       </attribute>
+       <attribute name="headerShowSortIndicator" stdset="0">
+        <bool>true</bool>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="configureToolBarsAction">
+   <property name="text">
+    <string>Con&amp;figure toolbars</string>
+   </property>
+   <property name="statusTip">
+    <string>Configure toolbars</string>
+   </property>
+   <property name="whatsThis">
+    <string>Configure toolbars</string>
+   </property>
+  </action>
+  <action name="editToolBarSeparator1">
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="editMenuSeparator1"/>
+  <action name="actionUpdate">
+   <property name="text">
+    <string>&amp;Update</string>
+   </property>
+  </action>
+  <action name="printActionsSeparator"/>
+  <action name="actionLogin">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Change user</string>
+   </property>
+   <property name="statusTip">
+    <string>Change user</string>
+   </property>
+  </action>
+  <action name="actionCreate_telegram">
+   <property name="text">
+    <string>Create telegram</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionAddress_book">
+   <property name="text">
+    <string>Address book</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionAuto_answer_on_error">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Auto answer on error</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QtMenuView</class>
+   <extends>QMenu</extends>
+   <header>qtmenuview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
